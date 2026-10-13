@@ -22,7 +22,7 @@ public class MyWorld extends World
         Topping topping3 = new Topping("Olives");
         addObject(topping3, 400, 20);
 
-        Topping topping4 = new Topping("Pineapples");
+        Topping topping4 = new Topping("Pineapple");
         addObject(topping4, 520, 80);
     }
 }
