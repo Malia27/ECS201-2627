@@ -20,7 +20,7 @@ public class GadgetShop {
 
         // A1. TODO: diagonal = square root of (width squared + height squared)
         //     Use Math.sqrt and Math.pow.
-        double diagonal = Math.sqrt(width*2 + height*2);
+        double diagonal = Math.sqrt(Math.pow(width, 2) + Math.pow(height, 2));
         System.out.println("A1 Screen diagonal: " + diagonal);
 
         // A2. Two stores sell the same headphones.
@@ -31,12 +31,12 @@ public class GadgetShop {
         System.out.println("A2 Lower price: " + lower);
 
         // A3. TODO: savings = the positive difference between the two prices.
-        double savings = Math.abs();
+        double savings = Math.abs(priceA - priceB);
         System.out.println("A3 Savings (raw): " + savings);
 
         // A4. TODO: round savings to cents.
         //     Multiply by 100, use Math.round, then divide by 100.0
-        double savingsCents = 0;
+        double savingsCents = Math.round(savings*100)/100.0;
         System.out.println("A4 Savings (rounded): " + savingsCents);
 
         // A5. TODO: a random whole number from 1 to 100 using Math.random()
